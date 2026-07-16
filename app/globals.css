@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-display: 'Manrope', 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button:not(:disabled),
+[role="button"],
+a {
+  cursor: pointer;
+}
+
+body {
+  @apply bg-white text-brand-ink antialiased font-sans;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display tracking-tight;
+}
+
+/* grain overlay for dark sections */
+.grain-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain 1s steps(4) infinite;
+}
+
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1.5px;
+  background: #1450FF;
+  transition: width 0.25s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.container-x {
+  @apply mx-auto w-full max-w-7xl px-6 lg:px-8;
+}
+
+.section-pad {
+  @apply py-20 lg:py-28;
+}
+
+.eyebrow {
+  @apply inline-flex items-center gap-2 rounded-full border border-brand-line bg-brand-mist px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-brand-blue;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand-black px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-blue;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-brand-black/15 bg-white px-6 py-3 text-sm font-semibold text-brand-black transition hover:border-brand-blue hover:text-brand-blue;
+}
+
+.card {
+  @apply rounded-2xl border border-brand-line bg-white p-6 shadow-card;
+}
+
+.gradient-hero {
+  background: radial-gradient(circle at 15% 10%, rgba(20,80,255,0.14), transparent 40%),
+    radial-gradient(circle at 85% 0%, rgba(20,80,255,0.10), transparent 45%),
+    #0A0A0C;
+}
