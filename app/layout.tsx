@@ -7,6 +7,7 @@ import '@fontsource/manrope/500.css';
 import '@fontsource/manrope/700.css';
 import '@fontsource/manrope/800.css';
 import './globals.css';
+import BotWidget from '@/components/BotWidget';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className="flex min-h-screen flex-col">
         <Navbar />
         <main className="flex-1">{children}</main>
+        <BotWidget />
         <Footer />
       </body>
     </html>
