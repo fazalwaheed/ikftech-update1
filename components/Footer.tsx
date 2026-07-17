@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { MapPin, ChevronRight, Phone, Mail, Sparkles, ArrowUpRight } from 'lucide-react';
 import { servicesMenu } from '@/lib/navigation';
+import BackToTop from '@/components/BackToTop';
 
 const offices = [
   { code: 'PK', country: 'Pakistan', address: '2, Sector D DHA Phase 6, Lahore, Pakistan' },
@@ -178,10 +179,11 @@ export default function Footer() {
             ))}
           </div>
 
-          <div className="flex gap-6">
+          <div className="flex items-center gap-6">
             <Link href="/privacy-policy" className="hover:text-brand-black">Privacy Policy</Link>
             <Link href="/cookie-policy" className="hover:text-brand-black">Cookie Policy</Link>
             <Link href="/editorial-policy" className="hover:text-brand-black">Editorial Policy</Link>
+            <BackToTop />
           </div>
         </div>
       </div>

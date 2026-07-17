@@ -36,7 +36,7 @@ export default function BotWidget() {
     <>
       {/* floating trigger */}
       {!open && !dismissed && (
-        <div className="fixed right-6 top-1/2 z-50 flex -translate-y-1/2 flex-col items-end">
+       <div className="fixed right-6 top-[68%] z-50 flex -translate-y-1/2 flex-col items-end">
           <button
             onClick={() => setDismissed(true)}
             aria-label="Dismiss"
@@ -49,7 +49,7 @@ export default function BotWidget() {
             aria-label="Open project inquiry form"
             className="flex cursor-pointer items-center justify-center transition hover:scale-105"
           >
-            <div className="relative h-24 w-20 animate-botfloat">
+           <div className="relative h-36 w-44 animate-botfloat">
               <Image
                 src="/images/bot-mascot.png"
                 alt="Chat with IKFTECH"
@@ -67,13 +67,13 @@ export default function BotWidget() {
         <div className="fixed right-6 top-1/2 z-50 w-[90vw] max-w-sm -translate-y-1/2 overflow-hidden rounded-2xl border border-white/10 bg-brand-black shadow-2xl">
           <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
             <div className="flex items-center gap-3">
-              <div className="relative h-10 w-9 shrink-0">
+              <div className="relative h-11 w-14 shrink-0">
                 <Image
                   src="/images/bot-mascot.png"
                   alt=""
                   fill
                   className="object-contain"
-                  sizes="40px"
+                  sizes="176px"
                 />
               </div>
               <div>

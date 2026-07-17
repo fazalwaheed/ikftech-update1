@@ -25,7 +25,11 @@ export default function MegaMenu({
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -8 }}
       transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
-      className="absolute left-0 top-full z-40 mt-3 w-[min(94vw,980px)]"
+     className={`absolute left-0 top-full z-40 mt-3 ${
+  menu.key === 'company' || menu.key === 'resources'
+    ? 'w-[min(94vw,760px)]'
+    : 'w-[min(94vw,980px)]'
+}`}
     >
       <div className="overflow-hidden rounded-2xl border border-white/10 bg-brand-black shadow-2xl">
         {/* header */}
@@ -96,7 +100,12 @@ export default function MegaMenu({
           {/* MIDDLE: item grid — active tab only (tabbed) or all items (grid) */}
           <div className="grid max-h-[65vh] flex-1 grid-cols-1 gap-x-6 gap-y-0.5 overflow-y-auto p-5 sm:grid-cols-2">
             {(isTabbed ? [menu.columns[activeTab]] : menu.columns).map((col) => (
-              <div key={col.title} className={isTabbed ? 'contents' : ''}>
+          <div
+  key={col.title}
+  className={
+    isTabbed || menu.key === 'company' || menu.key === 'resources' ? 'contents' : ''
+  }
+>
                 {!isTabbed && menu.columns.length > 1 && (
                   <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-white/40">
                     {col.title}
