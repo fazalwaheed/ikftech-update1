@@ -1,10 +1,12 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { Menu, X, ArrowUpRight, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import MegaMenu from '@/components/MegaMenu';
+import ArrowHoverIcon from '@/components/ArrowHoverIcon';
 import { allMenus } from '@/lib/navigation';
 
 export default function Navbar() {
@@ -33,32 +35,32 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'border-b border-brand-line bg-white/85 backdrop-blur-md shadow-sm'
-          : 'border-b border-transparent bg-white/60 backdrop-blur-sm'
+      className={`sticky top-0 z-50 bg-brand-black transition-all duration-300 ${
+        scrolled ? 'border-b border-white/10 shadow-lg' : 'border-b border-transparent'
       }`}
       onMouseLeave={scheduleClose}
     >
       <div className="container-x flex h-18 items-center justify-between py-4">
-        <Link href="/" className="flex flex-col leading-none">
-          <span className="text-xl font-extrabold tracking-tight text-brand-blue font-display">
-            IKFTECH
-          </span>
-          <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-brand-ink/40">
-            Innovating the Future of Technology
-          </span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/logo-white.png"
+            alt="IKFTECH"
+            width={342}
+            height={65}
+            className="h-8 w-auto"
+            priority
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
-          <Link href="/case-studies" className="nav-link text-sm font-medium text-brand-ink/80 transition hover:text-brand-blue">
+          <Link href="/case-studies" className="nav-link text-sm font-medium text-white/80 transition hover:text-brand-blue">
             Works
           </Link>
           {allMenus.map((menu) => (
             <div key={menu.key} onMouseEnter={() => openMenu(menu.key)}>
               <button
                 className={`nav-link flex cursor-pointer items-center gap-1 text-sm font-medium transition ${
-                  activeMenu === menu.key ? 'text-brand-blue' : 'text-brand-ink/80 hover:text-brand-blue'
+                  activeMenu === menu.key ? 'text-brand-blue' : 'text-white/80 hover:text-brand-blue'
                 }`}
               >
                 {menu.label}
@@ -72,12 +74,18 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden lg:block">
-          <Link href="/contact" className="btn-primary">
-            Let&apos;s connect <ArrowUpRight size={16} />
+          <Link
+            href="/contact"
+            className="group inline-flex cursor-pointer items-center gap-3 rounded-full bg-white py-1.5 pl-6 pr-1.5 text-sm font-semibold text-brand-black transition hover:bg-white/90"
+          >
+            Let&apos;s connect
+            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-black text-white transition-colors group-hover:bg-brand-blue">
+              <ArrowHoverIcon className="text-white" />
+            </span>
           </Link>
         </div>
 
-        <button className="cursor-pointer lg:hidden" onClick={() => setOpen(!open)} aria-label="Toggle menu">
+        <button className="cursor-pointer text-white lg:hidden" onClick={() => setOpen(!open)} aria-label="Toggle menu">
           {open ? <X /> : <Menu />}
         </button>
       </div>
@@ -100,19 +108,19 @@ export default function Navbar() {
 
       {/* mobile menu */}
       {open && (
-        <div className="max-h-[80vh] overflow-y-auto border-t border-brand-line bg-white lg:hidden">
+        <div className="max-h-[80vh] overflow-y-auto border-t border-white/10 bg-brand-black lg:hidden">
           <div className="container-x flex flex-col gap-1 py-6">
             <Link
               href="/case-studies"
-              className="py-2 text-sm font-medium text-brand-ink/80"
+              className="py-2 text-sm font-medium text-white/80"
               onClick={() => setOpen(false)}
             >
               Works
             </Link>
             {allMenus.map((menu) => (
-              <div key={menu.key} className="border-t border-brand-line/60 py-2">
+              <div key={menu.key} className="border-t border-white/10 py-2">
                 <button
-                  className="flex w-full cursor-pointer items-center justify-between py-2 text-sm font-medium text-brand-ink/80"
+                  className="flex w-full cursor-pointer items-center justify-between py-2 text-sm font-medium text-white/80"
                   onClick={() => setMobileMenu(mobileMenu === menu.key ? null : menu.key)}
                 >
                   {menu.label}
@@ -126,7 +134,7 @@ export default function Navbar() {
                     {menu.columns.map((col) => (
                       <div key={col.title}>
                         {menu.columns.length > 1 && (
-                          <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-brand-ink/40">
+                          <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-white/40">
                             {col.title}
                           </p>
                         )}
@@ -135,7 +143,7 @@ export default function Navbar() {
                             <li key={item.href}>
                               <Link
                                 href={item.href}
-                                className="block py-1.5 text-sm text-brand-ink/70"
+                                className="block py-1.5 text-sm text-white/70"
                                 onClick={() => {
                                   setOpen(false);
                                   setMobileMenu(null);
@@ -162,8 +170,15 @@ export default function Navbar() {
                 )}
               </div>
             ))}
-            <Link href="/contact" className="btn-primary mt-4 w-fit" onClick={() => setOpen(false)}>
-              Let&apos;s connect <ArrowUpRight size={16} />
+            <Link
+              href="/contact"
+              className="group mt-4 inline-flex w-fit cursor-pointer items-center gap-3 rounded-full bg-white py-1.5 pl-6 pr-1.5 text-sm font-semibold text-brand-black transition hover:bg-white/90"
+              onClick={() => setOpen(false)}
+            >
+              Let&apos;s connect
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-black text-white transition-colors group-hover:bg-brand-blue">
+                <ArrowHoverIcon className="text-white" />
+              </span>
             </Link>
           </div>
         </div>

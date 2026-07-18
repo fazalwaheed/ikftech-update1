@@ -36,31 +36,32 @@ export default function BotWidget() {
     <>
       {/* floating trigger */}
       {!open && !dismissed && (
-       <div className="fixed right-6 top-[68%] z-50 flex -translate-y-1/2 flex-col items-end">
-          <button
-            onClick={() => setDismissed(true)}
-            aria-label="Dismiss"
-            className="mb-1 flex h-6 w-6 cursor-pointer items-center justify-center rounded-full bg-brand-black text-white/70 transition hover:text-white"
-          >
-            <X size={13} />
-          </button>
-          <button
-            onClick={() => setOpen(true)}
-            aria-label="Open project inquiry form"
-            className="flex cursor-pointer items-center justify-center transition hover:scale-105"
-          >
-           <div className="relative h-36 w-44 animate-botfloat">
-              <Image
-                src="/images/bot-mascot.png"
-                alt="Chat with IKFTECH"
-                fill
-                className="object-contain"
-                sizes="96px"
-              />
-            </div>
-          </button>
-        </div>
-      )}
+  <div className="fixed right-6 top-[68%] z-50 -translate-y-1/2">
+    <button
+      onClick={() => setOpen(true)}
+      aria-label="Open project inquiry form"
+      className="relative flex h-36 w-44 cursor-pointer items-center justify-center transition hover:scale-105"
+    >
+      <div className="relative h-36 w-44 animate-botfloat">
+        <Image
+          src="/images/bot-mascot.png"
+          alt="Chat with IKFTECH"
+          fill
+          className="object-contain"
+          sizes="176px"
+        />
+      </div>
+    </button>
+
+    <button
+      onClick={() => setDismissed(true)}
+      aria-label="Dismiss"
+      className="absolute right-3 top-3 flex h-6 w-6 cursor-pointer items-center justify-center rounded-full bg-brand-black text-white/70 transition hover:text-white"
+    >
+      <X size={13} />
+    </button>
+  </div>
+)}
 
       {/* modal panel */}
       {open && (
@@ -68,14 +69,14 @@ export default function BotWidget() {
           <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
             <div className="flex items-center gap-3">
               <div className="relative h-11 w-14 shrink-0">
-                <Image
-                  src="/images/bot-mascot.png"
-                  alt=""
-                  fill
-                  className="object-contain"
-                  sizes="176px"
-                />
-              </div>
+  <Image
+    src="/images/bot-mascot.png"
+    alt=""
+    fill
+    className="object-contain"
+    sizes="56px"   // ✅ correct
+  />
+</div>
               <div>
                 <p className="text-sm font-semibold text-white">Let&apos;s talk about your project</p>
                 <p className="text-xs text-white/40">We usually reply within a few hours</p>

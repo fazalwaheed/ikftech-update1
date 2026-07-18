@@ -10,6 +10,7 @@ const config: Config = {
       colors: {
         brand: {
           blue: '#1450FF',
+          hover: '#00D9C0',
           blueDark: '#0B2E9F',
           blueDeep: '#081B3A',
           black: '#0A0A0C',

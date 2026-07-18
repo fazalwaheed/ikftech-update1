@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { MapPin, ChevronRight, Phone, Mail, Sparkles, ArrowUpRight } from 'lucide-react';
 import { servicesMenu } from '@/lib/navigation';
 import BackToTop from '@/components/BackToTop';
@@ -71,11 +72,14 @@ export default function Footer() {
       <div className="container-x grid gap-12 py-16 lg:grid-cols-[1.1fr_2.5fr]">
         {/* left: brand + contact */}
         <div>
-          <Link href="/" className="flex flex-col leading-none">
-            <span className="text-xl font-extrabold tracking-tight text-brand-blue">IKFTECH</span>
-            <span className="mt-0.5 text-[10px] font-medium uppercase tracking-wide text-brand-black/40">
-              Innovating the Future of Technology
-            </span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/images/logo-blue.png"
+              alt="IKFTECH"
+              width={342}
+              height={65}
+              className="h-8 w-auto"
+            />
           </Link>
 
           <p className="mt-6 text-sm font-semibold text-brand-black">Drop us a line</p>
@@ -160,8 +164,8 @@ export default function Footer() {
       </div>
 
       {/* bottom bar */}
-      <div className="border-t border-black/10">
-        <div className="container-x flex flex-col items-center justify-between gap-6 py-6 text-xs text-brand-black/50 lg:flex-row">
+     <div className="w-full border-t border-white/10 bg-[#000000]">
+        <div className="container-x flex flex-col items-center justify-between gap-6 py-6 text-xs text-brand-white lg:flex-row">
           <p>© {new Date().getFullYear()} IKFTECH. All rights reserved.</p>
 
           <div className="flex gap-5">
@@ -170,7 +174,7 @@ export default function Footer() {
                 key={s.name}
                 href="#"
                 aria-label={s.name}
-                className={`text-brand-black/40 transition ${s.hover}`}
+                className={`text-brand-white transition ${s.hover}`}
               >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                   <path d={s.path} />
@@ -180,9 +184,9 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-6">
-            <Link href="/privacy-policy" className="hover:text-brand-black">Privacy Policy</Link>
-            <Link href="/cookie-policy" className="hover:text-brand-black">Cookie Policy</Link>
-            <Link href="/editorial-policy" className="hover:text-brand-black">Editorial Policy</Link>
+            <Link href="/privacy-policy" className="hover:text-brand-blue">Privacy Policy</Link>
+            <Link href="/cookie-policy" className="hover:text-brand-blue">Cookie Policy</Link>
+            <Link href="/editorial-policy" className="hover:text-brand-blue">Editorial Policy</Link>
             <BackToTop />
           </div>
         </div>
