@@ -170,7 +170,7 @@ export default function MegaMenu({
                 </span>
                 <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl border border-white/10">
                   <Image
-                    src="/images/featured-altflow.jpg"
+                    src="/images/icons/feature.JPG"
                     alt={menu.featuredWork.title}
                     fill
                     className="object-cover"

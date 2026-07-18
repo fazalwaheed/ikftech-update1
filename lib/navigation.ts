@@ -48,7 +48,7 @@ export const servicesMenu: MegaMenuConfig = {
   viewAllHref: '/services',
   viewAllLabel: 'View all services',
   featuredWork: {
-    image: '/images/featured-altflow.jpg',
+    image: '/images/icons/feature.JPG',
     tags: ['SaaS', 'AI', 'Featured'],
     title: 'Altflow — AI tool that creates SEO-optimized articles at scale',
     href: '/case-studies/altflow',
@@ -57,7 +57,7 @@ export const servicesMenu: MegaMenuConfig = {
     {
       title: 'AI & Data Innovation',
       icon: Bot,
-      iconImage: '/images/icons/data-eng.jpg',
+      iconImage: '/images/icons/data-eng.JPG',
       items: [
         { label: 'AI Pod', href: '/services/ai-pod', description: 'Build production-ready AI systems in weeks with a focused AI team.', icon: Bot, badge: 'NEW' },
         { label: 'GenAI Consulting & Workshops', href: '/services/genai-consulting', description: 'Strategy, workshops, roadmaps', icon: Sparkles },
@@ -75,7 +75,7 @@ export const servicesMenu: MegaMenuConfig = {
     {
       title: 'Engineering',
       icon: Code2,
-      iconImage: '/images/icons/engineering.jpg',
+      iconImage: '/images/icons/engineering.JPG',
       items: [
         { label: 'AI Software Development', href: '/services/ai-software-development', description: 'Front-End, Back-End, Full-Stack', icon: Code2, external: true },
         { label: 'MVP Development', href: '/services/mvp-development', description: 'Rapid prototyping, investor-ready', icon: Rocket },
@@ -88,7 +88,7 @@ export const servicesMenu: MegaMenuConfig = {
     {
       title: 'Branding Services',
       icon: PenTool,
-      iconImage: '/images/icons/branding.jpg',
+      iconImage: '/images/icons/branding.JPG',
       items: [
         { label: 'Pitch Deck', href: '/services/pitch-deck', description: 'Investor-ready storytelling', icon: FileText },
         { label: 'Brand Identity', href: '/services/brand-identity', description: 'Logo, voice, and visual systems', icon: PenTool },
@@ -100,7 +100,7 @@ export const servicesMenu: MegaMenuConfig = {
     {
       title: 'Design Services',
       icon: Layers,
-      iconImage: '/images/icons/design.jpg',
+      iconImage: '/images/icons/design.JPG',
       items: [
         { label: 'UI/UX Design', href: '/services/ui-ux-design', description: 'Product design that converts', icon: Layers },
         { label: 'Web Design', href: '/services/web-design', description: 'Conversion-focused web design', icon: PenTool },
@@ -112,7 +112,7 @@ export const servicesMenu: MegaMenuConfig = {
     {
       title: 'Cloud & Infrastructure',
       icon: Cloud,
-      iconImage: '/images/icons/Cloud & Infrastructure.jpg',
+      iconImage: '/images/icons/Cloud & Infrastructure.JPG',
       items: [
         { label: 'Cloud Strategy & Architecture', href: '/services/cloud-strategy-architecture', description: 'Architecture design & planning', icon: Cloud },
         { label: 'Cloud Migration', href: '/services/cloud-migration', description: 'Seamless workload transitions', icon: Cloud },
@@ -127,7 +127,7 @@ export const servicesMenu: MegaMenuConfig = {
     {
       title: 'Cybersecurity',
       icon: Shield,
-      iconImage: '/images/icons/Cybersecurity.jpg',
+      iconImage: '/images/icons/Cybersecurity.JPG',
       items: [
         { label: 'Cybersecurity Consulting & Risk Assessment', href: '/services/cybersecurity-consulting', description: 'Risk assessment & security strategy', icon: Shield },
         { label: 'Governance, Risk & Compliance', href: '/services/governance-risk-compliance', description: 'GRC frameworks & policies', icon: FileText },
@@ -140,7 +140,7 @@ export const servicesMenu: MegaMenuConfig = {
     {
       title: 'Solutions & Integrations',
       icon: Puzzle,
-      iconImage: '/images/icons/Solutions & Integrations.jpg',
+      iconImage: '/images/icons/Solutions & Integrations.JPG',
       items: [
         { label: 'Salesforce', href: '/services/salesforce', description: 'CRM implementation & customization', icon: Puzzle },
         { label: 'Dynamics 365', href: '/services/dynamics-365', description: 'Microsoft business applications', icon: Puzzle },
@@ -152,7 +152,7 @@ export const servicesMenu: MegaMenuConfig = {
     {
       title: 'Business & Engagement',
       icon: Users,
-      iconImage: '/images/icons/Business & Engagement.jpg',
+      iconImage: '/images/icons/Business & Engagement.JPG',
       items: [
         { label: 'Dedicated Team', href: '/services/dedicated-team', description: 'Senior engineers, embedded with you', icon: Users },
         { label: 'Back-Office Automation', href: '/services/back-office-automation', description: 'Automate operational workflows', icon: Zap },
@@ -187,12 +187,12 @@ export const industriesMenu: MegaMenuConfig = {
     {
       title: 'Industries',
       items: [
-        { label: 'Web3 & Blockchain', href: '/industries/web3-blockchain', description: 'DeFi, DEX, NFT, Smart Contracts', icon: Rocket, external: true, image: '/images/blockchain.jpg' },
-        { label: 'Fintech & Banking', href: '/industries/fintech-banking', description: 'Payments, exchanges, wealth mgmt', icon: TrendingUp, external: true, image: '/images/finetechai.jpg' },
-        { label: 'SaaS & Enterprise', href: '/industries/saas-enterprise', description: 'CRM, HR, AI, ERP, automation', icon: Briefcase, image: '/images/enterprises.jpg' },
-        { label: 'Healthcare & Wellness', href: '/industries/healthcare-wellness', description: 'Mental health, insurance, telemedicine', icon: Shield, image: '/images/health.jpg' },
-        { label: 'E-commerce & Retail', href: '/industries/ecommerce-retail', description: 'Storefronts, inventory, growth', icon: BarChart3, image: '/images/retail.jpg' },
-        { label: 'Logistics & Supply Chain', href: '/industries/logistics-supply-chain', description: 'Tracking, routing, fleet systems', icon: Layers, image: '/images/chain.jpg' },
+        { label: 'Web3 & Blockchain', href: '/industries/web3-blockchain', description: 'DeFi, DEX, NFT, Smart Contracts', icon: Rocket, external: true, image: '/images/blockchain.JPG' },
+        { label: 'Fintech & Banking', href: '/industries/fintech-banking', description: 'Payments, exchanges, wealth mgmt', icon: TrendingUp, external: true, image: '/images/finetechai.JPG' },
+        { label: 'SaaS & Enterprise', href: '/industries/saas-enterprise', description: 'CRM, HR, AI, ERP, automation', icon: Briefcase, image: '/images/enterprises.JPG' },
+        { label: 'Healthcare & Wellness', href: '/industries/healthcare-wellness', description: 'Mental health, insurance, telemedicine', icon: Shield, image: '/images/health.JPG' },
+        { label: 'E-commerce & Retail', href: '/industries/ecommerce-retail', description: 'Storefronts, inventory, growth', icon: BarChart3, image: '/images/retail.JPG' },
+        { label: 'Logistics & Supply Chain', href: '/industries/logistics-supply-chain', description: 'Tracking, routing, fleet systems', icon: Layers, image: '/images/chain.JPG' },
       ],
     },
   ],
@@ -209,10 +209,10 @@ export const companyMenu: MegaMenuConfig = {
     {
       title: 'Company',
       items: [
-        { label: 'About Us', href: '/about', description: 'Who we are, our mission, and how we make a difference', icon: Info, image: '/images/about2.jpg' },
-        { label: 'How We Work', href: '/how-we-work', description: 'Our methodology for delivering reliable, future-proof software', icon: Compass, image: '/images/works.jpg' },
-        { label: 'AI-First Company', href: '/ai-first', description: 'Our approach to building intelligent, scalable solutions', icon: Sparkles, badge: 'NEW', image: '/images/aii.jpg' },
-        { label: 'Careers', href: '/careers', description: 'Join our global team — open roles across engineering, design, and more', icon: Users, external: true, image: '/images/careers.jpg' },
+        { label: 'About Us', href: '/about', description: 'Who we are, our mission, and how we make a difference', icon: Info, image: '/images/about2.JPG' },
+        { label: 'How We Work', href: '/how-we-work', description: 'Our methodology for delivering reliable, future-proof software', icon: Compass, image: '/images/works.JPG' },
+        { label: 'AI-First Company', href: '/ai-first', description: 'Our approach to building intelligent, scalable solutions', icon: Sparkles, badge: 'NEW', image: '/images/aii.JPG' },
+        { label: 'Careers', href: '/careers', description: 'Join our global team — open roles across engineering, design, and more', icon: Users, external: true, image: '/images/careers.JPG' },
       ],
     },
   ],
@@ -229,9 +229,9 @@ export const resourcesMenu: MegaMenuConfig = {
     {
       title: 'Resources',
       items: [
-        { label: 'Blog', href: '/blog', description: 'Insights on AI, engineering, and building systems that last', icon: BookOpen, image: '/images/blog.jpg' },
-        { label: 'White Papers & eBooks', href: '/resources/whitepapers', description: 'In-depth guides on AI strategy, cloud optimization, and digital transformation', icon: FileText, external: true, image: '/images/whitepaper.jpg' },
-        { label: 'Newsroom', href: '/newsroom', description: 'Latest news, press releases, and company announcements', icon: Newspaper, external: true, image: '/images/newsletter.jpg' },
+        { label: 'Blog', href: '/blog', description: 'Insights on AI, engineering, and building systems that last', icon: BookOpen, image: '/images/blog.JPG' },
+        { label: 'White Papers & eBooks', href: '/resources/whitepapers', description: 'In-depth guides on AI strategy, cloud optimization, and digital transformation', icon: FileText, external: true, image: '/images/whitepaper.JPG' },
+        { label: 'Newsroom', href: '/newsroom', description: 'Latest news, press releases, and company announcements', icon: Newspaper, external: true, image: '/images/newsletter.JPG' },
       ],
     },
   ],
