@@ -47,7 +47,6 @@ export default function MegaMenu({
         </div>
 
         <div className="flex">
-          {/* LEFT: tab list (tabbed layout) or static info sidebar (grid layout) */}
           {isTabbed ? (
             <div
               className="hidden w-60 shrink-0 border-r border-white/10 bg-white/[0.03] p-4 lg:block"
@@ -111,7 +110,6 @@ export default function MegaMenu({
             )
           )}
 
-          {/* MIDDLE: item grid — active tab only (tabbed) or all items (grid) */}
           <div className="grid max-h-[65vh] flex-1 content-start grid-cols-1 gap-x-6 gap-y-6 overflow-y-auto p-5 sm:grid-cols-2">
             {(isTabbed ? [menu.columns[activeTab]] : menu.columns).map((col) => (
               <div
@@ -161,7 +159,6 @@ export default function MegaMenu({
             ))}
           </div>
 
-          {/* RIGHT: per-item hover image (all layouts), Featured Work as default state for Services */}
           <div className="hidden w-64 shrink-0 border-l border-white/10 bg-gradient-to-br from-brand-blue/10 via-transparent to-transparent p-5 xl:flex xl:flex-col xl:justify-center">
             {!hovered && !sidebarHovered && isTabbed && menu.featuredWork ? (
               <div>
@@ -175,6 +172,7 @@ export default function MegaMenu({
                     fill
                     className="object-cover"
                     sizes="220px"
+                    quality={95}
                   />
                 </div>
                 <div className="mt-3 flex flex-wrap gap-1.5">
@@ -227,6 +225,7 @@ export default function MegaMenu({
                           fill
                           className="object-cover"
                           sizes="256px"
+                          quality={95}
                         />
                         <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-black/80 to-transparent p-3">
                           <p className="text-sm font-semibold text-white">{hovered.label}</p>
@@ -245,7 +244,6 @@ export default function MegaMenu({
                     )}
                   </motion.div>
                 ) : isTabbed && activeColumn?.iconImage ? (
-                  // CATEGORY TAB HOVER IMAGE
                   <motion.div
                     key={`category-${activeColumn.title}`}
                     initial={{ opacity: 0, scale: 0.96 }}
@@ -261,6 +259,7 @@ export default function MegaMenu({
                         fill
                         className="object-cover"
                         sizes="256px"
+                        quality={95}
                       />
                       <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-black/80 to-transparent p-3">
                         <p className="text-sm font-semibold text-white">{activeColumn.title}</p>
