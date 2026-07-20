@@ -127,7 +127,7 @@ export const servicesMenu: MegaMenuConfig = {
     {
       title: 'Cybersecurity',
       icon: Shield,
-      iconImage: '/images/icons/Cyber_1.png',
+      iconImage: '/images/icons/cyber_1.png',
       items: [
         { label: 'Cybersecurity Consulting & Risk Assessment', href: '/services/cybersecurity-consulting', description: 'Risk assessment & security strategy', icon: Shield },
         { label: 'Governance, Risk & Compliance', href: '/services/governance-risk-compliance', description: 'GRC frameworks & policies', icon: FileText },
@@ -140,7 +140,7 @@ export const servicesMenu: MegaMenuConfig = {
     {
       title: 'Solutions & Integrations',
       icon: Puzzle,
-      iconImage: '/images/icons/Solution_1.png',
+      iconImage: '/images/icons/solution_1.png',
       items: [
         { label: 'Salesforce', href: '/services/salesforce', description: 'CRM implementation & customization', icon: Puzzle },
         { label: 'Dynamics 365', href: '/services/dynamics-365', description: 'Microsoft business applications', icon: Puzzle },
