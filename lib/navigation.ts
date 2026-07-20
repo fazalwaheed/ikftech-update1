@@ -112,7 +112,7 @@ export const servicesMenu: MegaMenuConfig = {
     {
       title: 'Cloud & Infrastructure',
       icon: Cloud,
-      iconImage: '/images/icons/Cloud_1.png',
+      iconImage: '/images/icons/cloud_1.png',
       items: [
         { label: 'Cloud Strategy & Architecture', href: '/services/cloud-strategy-architecture', description: 'Architecture design & planning', icon: Cloud },
         { label: 'Cloud Migration', href: '/services/cloud-migration', description: 'Seamless workload transitions', icon: Cloud },
