@@ -54,23 +54,6 @@ export default function Navbar() {
             priority
           />
         </Link>
-        <button
-  onClick={() =>
-    document.dispatchEvent(
-      new KeyboardEvent("keydown", {
-        key: "k",
-        ctrlKey: true,
-      })
-    )
-  }
-  className="hidden lg:flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white hover:bg-white/10"
->
-  Search
-
-  <span className="rounded bg-white/10 px-2 py-0.5 text-xs">
-    Ctrl K
-  </span>
-</button>
 
         <nav className="hidden items-center gap-8 lg:flex">
           <Link href="/case-studies" className="nav-link text-sm font-medium text-white/80 transition hover:text-brand-blue">
@@ -93,19 +76,40 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-4 lg:flex">
-           <ThemeToggle />
-          <Link
-            href="/contact"
-            className="group inline-flex cursor-pointer items-center gap-3 rounded-full bg-white py-1.5 pl-6 pr-1.5 text-sm font-semibold text-brand-black transition hover:bg-white/90"
-          >
-            Let&apos;s connect
-            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-black text-white transition-colors group-hover:bg-brand-blue">
-              <ArrowHoverIcon className="text-white" />
-            </span>
-          </Link>
-        </div>
+        <div className="hidden items-center gap-3 lg:flex">
+ 
 
+  {/* Search */}
+  <button
+    onClick={() =>
+      document.dispatchEvent(
+        new KeyboardEvent("keydown", {
+          key: "k",
+          ctrlKey: true,
+        })
+      )
+    }
+    className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white transition-all duration-300 hover:border-white/20 hover:bg-white/10"
+  >
+    <span>Search</span>
+
+    <span className="rounded-md bg-white/10 px-2 py-0.5 text-xs text-white/80">
+      Ctrl&nbsp;K
+    </span>
+  </button>
+
+  {/* CTA */}
+  <Link
+    href="/contact"
+    className="group inline-flex cursor-pointer items-center gap-3 rounded-full bg-white py-1.5 pl-6 pr-1.5 text-sm font-semibold text-brand-black transition hover:bg-white/90"
+  >
+    Let&apos;s connect
+
+    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-black text-white transition-colors group-hover:bg-brand-blue">
+      <ArrowHoverIcon className="text-white" />
+    </span>
+  </Link>
+</div>
         <button className="cursor-pointer text-white lg:hidden" onClick={() => setOpen(!open)} aria-label="Toggle menu">
           {open ? <X /> : <Menu />}
         </button>
