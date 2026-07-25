@@ -44,13 +44,16 @@ export default function ServicesPage() {
                 <ul className="mt-4 space-y-1 border-t border-brand-line pt-4">
                   {cat.items.map((it) => (
                     <li key={it.href}>
-                      <Link
-                        href={it.href}
-                        className="flex items-center justify-between rounded-lg py-2 text-sm text-brand-ink/60 transition hover:bg-brand-mist hover:text-brand-blue"
-                      >
-                        {it.label}
-                        <span className="text-brand-ink/30">→</span>
-                      </Link>
+                     <Link
+  href={it.href}
+  className="group flex items-center justify-between rounded-lg py-2 text-sm text-brand-ink/60 transition-all duration-300 hover:bg-[#9B1C31]/10 hover:text-[#9B1C31]"
+>
+  {it.label}
+
+  <span className="text-brand-ink/30 transition-all duration-300 group-hover:text-[#9B1C31] group-hover:translate-x-1">
+    →
+  </span>
+</Link>
                     </li>
                   ))}
                 </ul>

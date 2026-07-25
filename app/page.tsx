@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   ArrowUpRight,
   Bot,
@@ -11,7 +12,12 @@ import {
 import Reveal from '@/components/Reveal';
 import Marquee from '@/components/Marquee';
 import AnimatedCounter from '@/components/AnimatedCounter';
+import ProcessSection from "@/components/home/ProcessSection";
+import IndustriesSection from "@/components/home/IndustriesSection";
+import AICapabilitiesBento from "@/components/home/AICapabilitiesBento";
 import ServiceCard from '@/components/ServiceCard';
+import DashboardMockup from '@/components/DashboardMockup';
+import ImpactMetrics from '@/components/ImpactMetrics';
 import Testimonials from '@/components/Testimonials';
 import CTASection from '@/components/CTASection';
 
@@ -70,16 +76,27 @@ const stats = [
 export default function HomePage() {
   return (
     <>
-      {/* HERO — dark, grain texture, blue glow, like Zylo */}
+      {/* HERO — dark, grain texture, blue glow, photo background */}
+     
       <section className="relative overflow-hidden gradient-hero">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/header-bg.jpg"
+            alt=""
+            fill
+            priority
+            className="object-cover object-[center_20%] opacity-70"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-brand-black/40 via-brand-black/55 to-brand-black/85" />
+        </div>
         <div className="grain-overlay" />
         <div
           aria-hidden
-          className="absolute -top-20 right-[8%] h-72 w-72 rounded-full bg-brand-blue/25 blur-3xl animate-blob"
+          className="absolute -top-20 right-[8%] h-72 w-72 rounded-full bg-brand-cherry/30 blur-3xl animate-blob"
         />
         <div
           aria-hidden
-          className="absolute top-40 left-[5%] h-56 w-56 rounded-full bg-brand-blue/15 blur-3xl animate-blob"
+          className="absolute top-40 left-[5%] h-56 w-56 rounded-full bg-brand-cherry/20 blur-3xl animate-blob"
           style={{ animationDelay: '3s' }}
         />
 
@@ -92,7 +109,7 @@ export default function HomePage() {
           <Reveal delay={0.1}>
             <h1 className="mt-6 max-w-4xl text-4xl font-bold leading-[1.05] text-white lg:text-6xl">
               We unite strategy, design, and AI engineering into one
-              <span className="text-brand-blue"> scalable system.</span>
+              <span className="text-brand-cherry"> scalable system.</span>
             </h1>
           </Reveal>
           <Reveal delay={0.2}>
@@ -104,12 +121,12 @@ export default function HomePage() {
           </Reveal>
           <Reveal delay={0.3}>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <Link href="/contact" className="btn-primary bg-brand-blue hover:bg-white hover:text-brand-black">
+              <Link href="/contact" className="btn-primary bg-brand-cherry hover:bg-white hover:text-brand-black">
                 Book a free call <ArrowUpRight size={16} />
               </Link>
               <Link
                 href="/case-studies"
-                className="btn-outline border-white/20 bg-transparent text-white hover:border-brand-blue hover:text-brand-blue"
+                className="btn-outline border-white/20 bg-transparent text-white hover:border-brand-cherry hover:text-brand-cherry"
               >
                 View our work
               </Link>
@@ -118,108 +135,56 @@ export default function HomePage() {
         </div>
       </section>
 
-      <Marquee />
-
-      {/* STATS — animated counters */}
-      <section className="border-b border-brand-line bg-brand-mist">
-        <div className="container-x grid grid-cols-2 gap-8 py-12 lg:grid-cols-4">
-          {stats.map((s, i) => (
-            <Reveal key={s.label} delay={i * 0.08} className="text-center lg:text-left">
-              <p className="text-3xl font-bold text-brand-black lg:text-4xl font-display">
-                <AnimatedCounter value={s.value} suffix={s.suffix} />
-              </p>
-              <p className="mt-1 text-sm text-brand-ink/60">{s.label}</p>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
+     
+     
       {/* SERVICES */}
-      <section className="section-pad">
-        <div className="container-x">
-          <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
-            <Reveal className="max-w-xl">
-              <span className="eyebrow">What we do</span>
-              <h2 className="mt-4 text-3xl font-bold text-brand-black lg:text-4xl">
-                Every phase of your product lifecycle, covered.
-              </h2>
-              <p className="mt-4 text-brand-ink/60">
-                From first strategy conversation to enterprise-scale
-                deployment, our AI-augmented teams compress what normally
-                takes a large agency into a lean, senior-led delivery model.
-              </p>
-            </Reveal>
-            <Reveal delay={0.1}>
-              <Link href="/services" className="btn-outline">
-                All services <ArrowUpRight size={16} />
-              </Link>
-            </Reveal>
-          </div>
+<section className="section-pad">
+  <div className="container-x">
+    <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+      <div>
+        <Reveal>
+          <span className="eyebrow !text-brand-cherry">What we do</span>
 
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((s, i) => (
-              <Reveal key={s.title} delay={(i % 3) * 0.1}>
-                <ServiceCard {...s} />
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
+          <h2 className="mt-4 text-3xl font-bold text-brand-black lg:text-4xl">
+            Every phase of your product lifecycle, covered.
+          </h2>
 
-      {/* PROCESS */}
-      <section className="section-pad bg-brand-mist">
-        <div className="container-x">
-          <Reveal>
-            <span className="eyebrow">How we work</span>
-            <h2 className="mt-4 max-w-xl text-3xl font-bold text-brand-black lg:text-4xl">
-              A tight, senior-led process built for speed and accountability.
-            </h2>
-          </Reveal>
+          <p className="mt-4 text-brand-ink/60">
+            From first strategy conversation to enterprise-scale
+            deployment, our AI-augmented teams compress what normally
+            takes a large agency into a lean, senior-led delivery model.
+          </p>
+        </Reveal>
 
-          <div className="mt-12 grid gap-8 lg:grid-cols-4">
-            {[
-              { step: '01', title: 'Discover', desc: 'Align on goals, scope, and success metrics.' },
-              { step: '02', title: 'Design', desc: 'Prototype the experience before writing production code.' },
-              { step: '03', title: 'Build', desc: 'AI-augmented engineering ships in short, reviewable sprints.' },
-              { step: '04', title: 'Scale', desc: 'Harden, monitor, and grow the system post-launch.' },
-            ].map((p, i) => (
-              <Reveal key={p.step} delay={i * 0.1}>
-                <span className="text-sm font-bold text-brand-blue font-display">{p.step}</span>
-                <h3 className="mt-3 text-lg font-semibold text-brand-black">{p.title}</h3>
-                <p className="mt-2 text-sm text-brand-ink/60">{p.desc}</p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
+        <Reveal delay={0.1}>
+          <Link
+            href="/services"
+            className="mt-6 inline-flex cursor-pointer items-center justify-center gap-2 rounded-full border border-brand-black/15 bg-white px-6 py-3 text-sm font-semibold text-brand-black transition hover:border-brand-cherry hover:bg-brand-cherry hover:text-white"
+          >
+            All services <ArrowUpRight size={16} />
+          </Link>
+        </Reveal>
+      </div>
 
-      {/* INDUSTRIES STRIP */}
-      <section className="section-pad">
-        <div className="container-x">
-          <Reveal>
-            <span className="eyebrow">Industries</span>
-            <h2 className="mt-4 max-w-xl text-3xl font-bold text-brand-black lg:text-4xl">
-              Proven delivery patterns across 25+ industries.
-            </h2>
-          </Reveal>
-          <Reveal delay={0.15}>
-            <div className="mt-10 flex flex-wrap gap-3">
-              {[
-                'Fintech', 'Healthcare', 'E-commerce & Retail', 'Logistics',
-                'Real Estate', 'SaaS', 'Web3', 'Education', 'Travel', 'Manufacturing',
-              ].map((i) => (
-                <span
-                  key={i}
-                  className="rounded-full border border-brand-line px-5 py-2 text-sm font-medium text-brand-ink/70 transition hover:border-brand-blue hover:text-brand-blue"
-                >
-                  {i}
-                </span>
-              ))}
-            </div>
-          </Reveal>
-        </div>
-      </section>
+      <Reveal delay={0.15}>
+        <DashboardMockup />
+      </Reveal>
+    </div>
+  </div>
+</section>
+     {/* HOW WE WORK */}
 
+
+<ProcessSection />
+
+
+      
+     {/* INDUSTRIES */}
+<IndustriesSection />
+
+
+      <AICapabilitiesBento />
+<ImpactMetrics />
       <Testimonials />
       <CTASection />
     </>

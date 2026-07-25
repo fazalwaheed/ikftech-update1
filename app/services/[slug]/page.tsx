@@ -62,7 +62,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
             </p>
           </Reveal>
           <Reveal delay={0.3}>
-            <Link href="/contact" className="btn-primary mt-8 bg-brand-blue hover:bg-white hover:text-brand-black">
+            <Link href="/contact" className="btn-primary mt-8 bg-[#9B1C31] hover:bg-[#7A1627] hover:text-white">
               Book a free call <ArrowUpRight size={16} />
             </Link>
           </Reveal>
@@ -87,7 +87,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
             <ul className="mt-4 space-y-4">
               {deliverables.map((d) => (
                 <li key={d} className="flex gap-3 text-sm text-brand-ink/70">
-                  <CheckCircle2 size={18} className="mt-0.5 shrink-0 text-brand-blue" />
+                  <CheckCircle2 size={18}className="mt-0.5 shrink-0 text-[#9B1C31]" />
                   {d}
                 </li>
               ))}
@@ -112,10 +112,10 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
                 <Reveal key={i.href} delay={idx * 0.08}>
                   <Link
                     href={i.href}
-                    className="card flex h-full items-start gap-3 transition hover:-translate-y-1 hover:border-brand-blue/40"
+                    className="card group flex h-full items-start gap-3 transition-all duration-300 hover:-translate-y-2 hover:border-[#9B1C31] hover:shadow-[0_20px_40px_rgba(155,28,49,0.15)]"
                   >
                     {i.icon && (
-                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-blue/10 text-brand-blue">
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#9B1C31]/10 text-[#9B1C31] transition-all duration-300 group-hover:bg-[#9B1C31] group-hover:text-white">
                         <i.icon size={16} />
                       </span>
                     )}

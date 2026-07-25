@@ -164,7 +164,7 @@ export default function Footer() {
       </div>
 
       {/* bottom bar */}
-     <div className="w-full border-t border-white/10 bg-[#000000]">
+     <div className="w-full border-t border-white/10 bg-[#8B1E2D]">
         <div className="container-x flex flex-col items-center justify-between gap-6 py-6 text-xs text-brand-white lg:flex-row">
           <p>© {new Date().getFullYear()} IKFTECH. All rights reserved.</p>
 
@@ -184,9 +184,9 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-6">
-            <Link href="/privacy-policy" className="hover:text-brand-blue">Privacy Policy</Link>
-            <Link href="/cookie-policy" className="hover:text-brand-blue">Cookie Policy</Link>
-            <Link href="/editorial-policy" className="hover:text-brand-blue">Editorial Policy</Link>
+            <Link href="/privacy-policy" className="text-white transition hover:text-white/80">Privacy Policy</Link>
+           <Link href="/cookie-policy" className="text-white transition hover:text-white/80">Cookie Policy</Link>
+           <Link href="/editorial-policy" className="text-white transition hover:text-white/80">Editorial Policy</Link>
             <BackToTop />
           </div>
         </div>

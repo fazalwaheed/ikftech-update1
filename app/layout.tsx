@@ -7,6 +7,8 @@ import '@fontsource/manrope/500.css';
 import '@fontsource/manrope/700.css';
 import '@fontsource/manrope/800.css';
 import './globals.css';
+import { ThemeProvider } from '@/components/ThemeProvider';
+import CommandPalette from "@/components/CommandPalette";
 import BotWidget from '@/components/BotWidget';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -23,12 +25,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className="flex min-h-screen flex-col">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <BotWidget />
-        <Footer />
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+          <Navbar />
+          <CommandPalette />
+          <main className="flex-1">{children}</main>
+          <BotWidget />
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -5,7 +5,7 @@ const logos = [
 export default function Marquee() {
   const items = [...logos, ...logos];
   return (
-    <div className="overflow-hidden border-y border-white/10 bg-brand-black py-6">
+   <div className="overflow-hidden border-y border-white/10 bg-[#8B1E2D] py-6">
       <div className="flex w-max animate-marquee gap-16">
         {items.map((logo, i) => (
           <span

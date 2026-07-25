@@ -7,6 +7,7 @@ import { AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import MegaMenu from '@/components/MegaMenu';
 import ArrowHoverIcon from '@/components/ArrowHoverIcon';
+import ThemeToggle from '@/components/ThemeToggle';
 import { allMenus } from '@/lib/navigation';
 
 export default function Navbar() {
@@ -35,9 +36,11 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 bg-brand-black transition-all duration-300 ${
-        scrolled ? 'border-b border-white/10 shadow-lg' : 'border-b border-transparent'
-      }`}
+     className={`sticky top-0 z-50 bg-[#8B1E2D] transition-all duration-300 ${
+  scrolled
+    ? 'border-b border-white/10 shadow-lg'
+    : 'border-b border-transparent'
+}`}
       onMouseLeave={scheduleClose}
     >
       <div className="container-x flex h-18 items-center justify-between py-4">
@@ -51,6 +54,23 @@ export default function Navbar() {
             priority
           />
         </Link>
+        <button
+  onClick={() =>
+    document.dispatchEvent(
+      new KeyboardEvent("keydown", {
+        key: "k",
+        ctrlKey: true,
+      })
+    )
+  }
+  className="hidden lg:flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white hover:bg-white/10"
+>
+  Search
+
+  <span className="rounded bg-white/10 px-2 py-0.5 text-xs">
+    Ctrl K
+  </span>
+</button>
 
         <nav className="hidden items-center gap-8 lg:flex">
           <Link href="/case-studies" className="nav-link text-sm font-medium text-white/80 transition hover:text-brand-blue">
@@ -73,7 +93,8 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden items-center gap-4 lg:flex">
+           <ThemeToggle />
           <Link
             href="/contact"
             className="group inline-flex cursor-pointer items-center gap-3 rounded-full bg-white py-1.5 pl-6 pr-1.5 text-sm font-semibold text-brand-black transition hover:bg-white/90"

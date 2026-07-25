@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
+   darkMode: 'class',
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -10,6 +11,8 @@ const config: Config = {
       colors: {
         brand: {
           blue: '#1450FF',
+          cherry: '#7B1C34',   
+    cherryDark: '#5C1527',
           hover: '#00D9C0',
           blueDark: '#0B2E9F',
           blueDeep: '#081B3A',
