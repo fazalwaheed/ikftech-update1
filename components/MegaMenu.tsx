@@ -40,7 +40,7 @@ export default function MegaMenu({
           <Link
             href={menu.viewAllHref}
             onClick={onNavigate}
-            className="flex cursor-pointer items-center gap-1 text-sm font-medium text-white/80 transition hover:text-brand-blue"
+            className="flex cursor-pointer items-center gap-1 text-sm font-medium text-white/80 transition hover:text-brand-cherry"
           >
             {menu.viewAllLabel} <ArrowRight size={14} />
           </Link>
@@ -76,13 +76,13 @@ export default function MegaMenu({
                       setSidebarHovered(true);
                     }}
                     className={`flex w-full cursor-pointer items-center gap-3 rounded-lg px-2 py-2.5 text-left text-sm transition ${
-                      active ? 'bg-white/5 font-semibold text-brand-blue' : 'text-white/75 hover:text-white'
+                      active ? 'bg-white/5 font-semibold text-brand-white' : 'text-white/75 hover:text-cherry'
                     }`}
                   >
                     {TabIcon && (
                       <span
                         className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg transition ${
-                          active ? 'bg-brand-blue text-white' : 'bg-white/5 text-white/60'
+                          active ? 'bg-brand-cherry text-white' : 'bg-white/5 text-white/60'
                         }`}
                       >
                         <TabIcon size={15} />
@@ -101,7 +101,7 @@ export default function MegaMenu({
                 <ul className="mt-6 space-y-3">
                   {menu.sidebar!.bullets.map((b) => (
                     <li key={b} className="flex items-start gap-2 text-sm text-white/70">
-                      <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-brand-blue" />
+                      <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-brand-cherry" />
                       {b}
                     </li>
                   ))}
@@ -132,20 +132,20 @@ export default function MegaMenu({
                       className="group flex cursor-pointer items-start gap-2 rounded-md p-1 transition hover:bg-white/5"
                     >
                       {Icon && (
-                        <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-white/5 text-white/80 transition group-hover:bg-brand-hover/20 group-hover:text-brand-blue">
+                        <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-white/5 text-white/80 transition group-hover:bg-brand-hover/20 group-hover:text-brand-cherry">
                           <Icon size={13} />
                         </span>
                       )}
                       <span className="flex-1">
-                        <span className="flex items-center gap-1.5 text-sm font-medium text-white transition group-hover:text-brand-blue">
+                        <span className="flex items-center gap-1.5 text-sm font-medium text-white transition group-hover:text-brand-cherry">
                           {item.label}
                           {item.badge && (
-                            <span className="rounded-full bg-brand-blue px-1.5 py-0.5 text-[10px] font-bold text-white">
+                            <span className="rounded-full bg-brand-cherry px-1.5 py-0.5 text-[10px] font-bold text-white">
                               {item.badge}
                             </span>
                           )}
                           {item.external && (
-                            <ExternalLink size={11} className="shrink-0 text-white/40 group-hover:text-brand-blue" />
+                            <ExternalLink size={11} className="shrink-0 text-white/40 group-hover:text-brand-cherry" />
                           )}
                         </span>
                         {item.description && (
@@ -159,11 +159,11 @@ export default function MegaMenu({
             ))}
           </div>
 
-          <div className="hidden w-64 shrink-0 border-l border-white/10 bg-gradient-to-br from-brand-blue/10 via-transparent to-transparent p-5 xl:flex xl:flex-col xl:justify-center">
+          <div className="hidden w-64 shrink-0 border-l border-white/10 bg-gradient-to-br from-brand-cherry/10 via-transparent to-transparent p-5 xl:flex xl:flex-col xl:justify-center">
             {!hovered && !sidebarHovered && isTabbed && menu.featuredWork ? (
               <div>
                 <span className="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-white/50">
-                  <Sparkles size={12} className="text-brand-blue" /> Featured Work
+                  <Sparkles size={12} className="text-brand-cherry" /> Featured Work
                 </span>
                 <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl border border-white/10">
                   <Image

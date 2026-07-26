@@ -56,14 +56,16 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
-          <Link href="/case-studies" className="nav-link text-sm font-medium text-white/80 transition hover:text-brand-blue">
+          <Link href="/case-studies" className="nav-link text-sm font-medium text-white transition hover:text-brand-cherry">
             Works
           </Link>
           {allMenus.map((menu) => (
             <div key={menu.key} onMouseEnter={() => openMenu(menu.key)}>
               <button
                 className={`nav-link flex cursor-pointer items-center gap-1 text-sm font-medium transition ${
-                  activeMenu === menu.key ? 'text-brand-blue' : 'text-white/80 hover:text-brand-blue'
+                  activeMenu === menu.key
+  ? 'text-white'
+  : 'text-white/80 hover:text-white'
                 }`}
               >
                 {menu.label}
@@ -89,7 +91,7 @@ export default function Navbar() {
         })
       )
     }
-    className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white transition-all duration-300 hover:border-white/20 hover:bg-white/10"
+    className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white transition-all duration-300 hover:border-white/20 hover:bg-white"
   >
     <span>Search</span>
 
@@ -106,7 +108,7 @@ export default function Navbar() {
     Let&apos;s connect
 
     <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-black text-white transition-colors group-hover:bg-brand-blue">
-      <ArrowHoverIcon className="text-white" />
+      <ArrowHoverIcon className="text-cherry" />
     </span>
   </Link>
 </div>
@@ -183,7 +185,7 @@ export default function Navbar() {
                     ))}
                     <Link
                       href={menu.viewAllHref}
-                      className="block py-1.5 text-sm font-semibold text-brand-blue"
+                      className="block py-1.5 text-sm font-semibold text-brand-cherry"
                       onClick={() => {
                         setOpen(false);
                         setMobileMenu(null);

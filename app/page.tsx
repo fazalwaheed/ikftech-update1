@@ -15,6 +15,7 @@ import AnimatedCounter from '@/components/AnimatedCounter';
 import ProcessSection from "@/components/home/ProcessSection";
 import IndustriesSection from "@/components/home/IndustriesSection";
 import AICapabilitiesBento from "@/components/home/AICapabilitiesBento";
+import EngineeringImpact from "@/components/EngineeringImpact";
 import ServiceCard from '@/components/ServiceCard';
 import DashboardMockup from '@/components/DashboardMockup';
 import ImpactMetrics from '@/components/ImpactMetrics';
@@ -184,7 +185,9 @@ export default function HomePage() {
 
 
       <AICapabilitiesBento />
-<ImpactMetrics />
+{/* ENGINEERING IMPACT */}
+
+<EngineeringImpact />
       <Testimonials />
       <CTASection />
     </>

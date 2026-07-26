@@ -109,7 +109,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <Link href="/contact" className="btn-outline mt-6 border-black/15 bg-white text-brand-black hover:border-brand-blue hover:text-brand-blue">
+          <Link href="/contact" className="btn-outline mt-6 border-black/15 bg-white text-brand-black hover:border-brand-cherry hover:text-brand-cherry">
             Book a Consultation
           </Link>
         </div>
@@ -124,7 +124,7 @@ export default function Footer() {
                   <li key={item.href}>
                     <Link
                       href={item.href}
-                      className="text-sm text-brand-black/50 transition hover:text-brand-blue"
+                      className="text-sm text-brand-black/50 transition hover:text-brand-cherry"
                     >
                       {item.label}
                     </Link>
@@ -156,7 +156,7 @@ export default function Footer() {
 
         <Link
           href="/services"
-          className="mt-4 flex items-center justify-between rounded-xl border border-black/10 bg-white/70 px-5 py-3.5 text-sm text-brand-black/60 shadow-sm transition hover:border-brand-blue/40 hover:text-brand-black"
+          className="mt-4 flex items-center justify-between rounded-xl border border-black/10 bg-white/70 px-5 py-3.5 text-sm text-brand-black/60 shadow-sm transition hover:border-brand-cherry/40 hover:text-brand-black"
         >
           Show all services (40+)
           <ChevronRight size={16} />
