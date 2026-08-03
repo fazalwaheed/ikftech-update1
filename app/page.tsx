@@ -21,6 +21,7 @@ import DashboardMockup from '@/components/DashboardMockup';
 import ImpactMetrics from '@/components/ImpactMetrics';
 import Testimonials from '@/components/Testimonials';
 import CTASection from '@/components/CTASection';
+import WorkHero from '@/components/work/WorkHero';
 
 const services = [
   {
