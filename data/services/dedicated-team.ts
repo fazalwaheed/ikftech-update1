@@ -13,7 +13,7 @@ export const dedicatedTeam: ServiceData = {
   overview:
     "IKFTECH provides fully managed dedicated teams that integrate into your workflows. We help startups and enterprises rapidly scale software development while maintaining quality, transparency and predictable delivery.",
 
-  heroImage: "/images/services/dedicated-team.jpg",
+  heroImage: "/images/servimg/bussiness.png",
 
   stats: [
     { value: "150+", label: "Engineers" },

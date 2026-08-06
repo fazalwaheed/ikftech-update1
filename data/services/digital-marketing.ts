@@ -13,7 +13,7 @@ export const digitalMarketing: ServiceData = {
   overview:
     "IKFTECH helps businesses increase brand visibility, generate qualified leads, and maximize ROI through comprehensive digital marketing services. We combine strategic planning, creative campaigns, marketing automation, and performance analytics to deliver measurable business results across multiple digital channels.",
 
-  heroImage: "/images/services/digital-marketing.jpg",
+  heroImage: "/images/servimg/bussiness.png",
 
   stats: [
     {

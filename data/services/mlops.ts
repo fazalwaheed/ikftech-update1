@@ -10,7 +10,7 @@ export const mlops: ServiceData = {
   subtitle:
     "Deploy, monitor and scale machine learning models with enterprise-grade MLOps infrastructure.",
 
-  heroImage: "/images/services/mlops.webp",
+  heroImage: "/images/servimg/ai-agents.png",
 
   stats: [
     { value: "99.99%", label: "Platform Uptime" },

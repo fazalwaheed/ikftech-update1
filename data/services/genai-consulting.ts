@@ -10,7 +10,7 @@ export const genaiConsulting: ServiceData = {
   subtitle:
     "Identify high-impact AI opportunities through strategy sessions, executive workshops and implementation roadmaps.",
 
-  heroImage: "/images/services/genai-consulting.webp",
+  heroImage: "/images/servimg/genai-consulting.png",
 
   stats: [
     { value: "100+", label: "AI Assessments" },

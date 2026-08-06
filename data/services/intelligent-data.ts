@@ -10,7 +10,7 @@ export const intelligentData: ServiceData = {
   subtitle:
     "Transform enterprise data into real-time intelligence with modern data engineering and AI.",
 
-  heroImage: "/images/services/intelligent-data.webp",
+  heroImage: "/images/servimg/intelligent-data.png",
 
   stats: [
     { value: "500M+", label: "Records Processed" },

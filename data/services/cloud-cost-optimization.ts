@@ -10,7 +10,7 @@ export const cloudCostOptimization: ServiceData = {
   subtitle:
     "Reduce cloud spending without sacrificing performance through intelligent optimization, automation, and continuous cost governance.",
 
-  heroImage: "/images/services/cloud-cost-optimization.webp",
+  heroImage: "/images/servimg/cloud.png",
 
   stats: [
     {

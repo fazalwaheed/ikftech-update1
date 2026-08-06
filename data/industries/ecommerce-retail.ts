@@ -13,7 +13,7 @@ export const ecommerceRetail: ServiceData = {
   overview:
     "IKFTECH helps retailers and e-commerce businesses build high-performing digital commerce platforms that increase conversions, streamline operations and enhance customer experiences. From custom online stores and marketplaces to inventory management, payment integration and AI-powered recommendations, we deliver end-to-end retail technology solutions.",
 
-  heroImage: "/images/industries/ecommerce-retail.jpg",
+  heroImage: "/images/servimg/ecom.PNG",
 
   stats: [
     {

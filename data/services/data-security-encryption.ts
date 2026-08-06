@@ -10,7 +10,7 @@ export const dataSecurityEncryption: ServiceData = {
   subtitle:
     "Protect sensitive business data with enterprise-grade encryption, secure access controls, and comprehensive data protection strategies.",
 
-  heroImage: "/images/services/data-security-encryption.webp",
+  heroImage: "/images/servimg/intelligent-data.png",
 
   stats: [
     {

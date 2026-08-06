@@ -10,7 +10,7 @@ export const infrastructureModernization: ServiceData = {
   subtitle:
     "Transform legacy infrastructure into secure, scalable, cloud-ready platforms that improve performance, resilience, and operational efficiency.",
 
-  heroImage: "/images/services/infrastructure-modernization.webp",
+  heroImage: "/images/servimg/cloud.png",
 
   stats: [
     {

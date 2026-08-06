@@ -13,7 +13,7 @@ export const hrOutsourcing: ServiceData = {
   overview:
     "IKFTECH provides comprehensive HR outsourcing services that help organizations streamline recruitment, onboarding, payroll, employee engagement, compliance, and performance management. We become an extension of your HR department so your leadership can focus on strategic business growth.",
 
-  heroImage: "/images/services/hr-outsourcing.jpg",
+  heroImage: "/images/servimg/bussiness.png",
 
   stats: [
     {

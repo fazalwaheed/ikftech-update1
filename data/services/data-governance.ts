@@ -10,7 +10,7 @@ export const dataGovernance: ServiceData = {
   subtitle:
     "Create trusted, secure and compliant enterprise data ecosystems with modern governance and business intelligence.",
 
-  heroImage: "/images/services/data-governance.webp",
+  heroImage: "/images/servimg/ai-agents.png",
 
   stats: [
     { value: "100%", label: "Compliance Ready" },

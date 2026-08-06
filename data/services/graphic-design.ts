@@ -10,7 +10,8 @@ export const graphicDesign: ServiceData = {
   subtitle:
     "Creative graphic design services that strengthen your marketing, branding, and digital presence.",
 
-  heroImage: "/images/services/graphic-design.webp",
+ 
+  heroImage: "/images/servimg/branding.png",
 
   overview:
     "Our graphic design service creates polished marketing and brand assets for digital, print and campaign use. We combine strong visual direction with practical production workflows so every design feels on-brand, communicates clearly and is ready for real-world use.",

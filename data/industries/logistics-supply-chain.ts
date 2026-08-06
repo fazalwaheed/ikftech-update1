@@ -13,7 +13,8 @@ export const logisticsSupplyChain: ServiceData = {
   overview:
     "IKFTECH develops modern logistics and supply chain platforms that improve operational efficiency, enhance shipment visibility and automate business processes. From fleet management and warehouse systems to real-time tracking, route optimization and predictive analytics, we help logistics companies deliver faster, smarter and more reliable services.",
 
-  heroImage: "/images/industries/logistics-supply-chain.jpg",
+ 
+  heroImage: "/images/servimg/logistics.PNG",
 
   stats: [
     {

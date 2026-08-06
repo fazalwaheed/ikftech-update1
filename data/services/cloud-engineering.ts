@@ -10,7 +10,7 @@ export const cloudEngineering: ServiceData = {
   subtitle:
     "Design, build, and manage secure cloud-native applications and infrastructure that scale with your business.",
 
-  heroImage: "/images/services/cloud-engineering.webp",
+ heroImage: "/images/servimg/cloud.png",
 
   stats: [
     {

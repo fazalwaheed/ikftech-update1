@@ -10,7 +10,8 @@ export const customAppDevelopment: ServiceData = {
   subtitle:
     "Build secure, scalable, and high-performance custom applications tailored to your unique business processes and long-term growth.",
 
-  heroImage: "/images/services/custom-app-development.webp",
+  
+  heroImage: "/images/servimg/desing.png",
 
   overview:
     "Our custom app development service turns complex business requirements into secure, scalable software built around the way your team actually works. We handle discovery, architecture, UI/UX, engineering, integrations, testing and deployment so your application is ready for daily operations and future growth.",

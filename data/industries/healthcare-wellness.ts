@@ -13,7 +13,7 @@ export const healthcareWellness: ServiceData = {
   overview:
     "IKFTECH develops modern healthcare software that improves patient care, streamlines clinical workflows and enables secure digital health experiences. We build HIPAA-ready healthcare platforms, telemedicine applications, patient portals, wellness solutions and healthcare analytics systems for hospitals, clinics and health-tech startups.",
 
-  heroImage: "/images/industries/healthcare-wellness.jpg",
+  heroImage: "/images/servimg/health.PNG",
 
   stats: [
     {

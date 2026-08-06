@@ -10,7 +10,7 @@ export const dataInsights: ServiceData = {
   subtitle:
     "Turn business data into actionable intelligence with interactive dashboards, predictive analytics and real-time reporting.",
 
-  heroImage: "/images/services/data-insights.webp",
+  heroImage: "/images/servimg/ai-agents.png",
 
   stats: [
     {

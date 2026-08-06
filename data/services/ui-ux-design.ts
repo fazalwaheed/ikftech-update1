@@ -10,7 +10,7 @@ export const uiUxDesign: ServiceData = {
   subtitle:
     "Create intuitive, engaging, and conversion-focused digital experiences that delight users and accelerate business growth.",
 
-  heroImage: "/images/services/ui-ux-design.webp",
+  heroImage: "/images/servimg/desing.png",
 
   overview:
     "Our UI/UX design service helps teams create digital products that are easy to use, visually refined and aligned with business goals. We combine user research, journey mapping, wireframes, interface design, prototyping and usability testing to shape experiences people can understand quickly and use confidently.",

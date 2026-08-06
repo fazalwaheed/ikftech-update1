@@ -10,7 +10,7 @@ export const aiAgents: ServiceData = {
   subtitle:
     "Build intelligent autonomous AI agents that automate workflows, integrate with your systems and work 24/7.",
 
-  heroImage: "/images/services/ai-agents.webp",
+  heroImage: "/images/servimg/ai-agents.png",
 
   stats: [
     { value: "100+", label: "Automated Workflows" },

@@ -10,7 +10,7 @@ export const logoDesign: ServiceData = {
   subtitle:
     "Design a memorable logo that reflects your brand identity and creates a lasting first impression.",
 
-  heroImage: "/images/services/logo-design.webp",
+  heroImage: "/images/servimg/branding.png",
 
   overview:
     "Our logo design service creates distinctive, scalable marks that capture your brand personality and work across every channel. We combine research, concept development, typography and color exploration to deliver a logo system with the files and guidance needed for launch.",

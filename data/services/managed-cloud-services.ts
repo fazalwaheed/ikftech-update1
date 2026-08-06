@@ -10,7 +10,7 @@ export const managedCloudServices: ServiceData = {
   subtitle:
     "Ensure your cloud infrastructure remains secure, optimized, and highly available with 24/7 managed cloud operations and expert support.",
 
-  heroImage: "/images/services/managed-cloud-services.webp",
+  heroImage: "/images/servimg/cloud.png",
 
   stats: [
     {

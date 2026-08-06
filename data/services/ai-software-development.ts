@@ -10,7 +10,7 @@ export const aiSoftwareDevelopment: ServiceData = {
   subtitle:
     "Design, build and deploy intelligent software powered by AI, machine learning and modern cloud technologies.",
 
-  heroImage: "/images/services/ai-software-development.webp",
+  heroImage: "/images/servimg/full-stack-development.png",
 
   stats: [
     {

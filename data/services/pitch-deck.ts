@@ -10,7 +10,8 @@ export const pitchDeck: ServiceData = {
   subtitle:
     "Investor-ready pitch decks that communicate your vision, validate your business model and help you secure funding.",
 
-  heroImage: "/images/services/pitch-deck.webp",
+  
+  heroImage: "/images/servimg/branding.png",
 
   stats: [
     {

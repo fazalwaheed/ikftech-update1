@@ -10,8 +10,7 @@ export const aiIntegration: ServiceData = {
   subtitle:
     "Integrate AI into your existing applications, workflows and enterprise systems with secure, scalable deployments.",
 
-  heroImage: "/images/services/ai-integration.webp",
-
+   heroImage: "/images/servimg/ai-agents.png",
   stats: [
     { value: "200+", label: "Integrations" },
     { value: "99.9%", label: "System Uptime" },

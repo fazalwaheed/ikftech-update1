@@ -10,7 +10,7 @@ export const webDesign: ServiceData = {
   subtitle:
     "Create modern, responsive, and conversion-focused websites that elevate your brand and deliver exceptional user experiences.",
 
-  heroImage: "/images/services/web-design.webp",
+  heroImage: "/images/servimg/full-stack-development.png",
 
   overview:
     "Our web design service creates modern, responsive websites that communicate clearly, load quickly and support measurable business outcomes. We combine brand-aware visual design, intuitive page structure, performance-focused implementation and SEO-friendly foundations to help visitors move from interest to action.",

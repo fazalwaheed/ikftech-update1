@@ -10,7 +10,7 @@ export const cloudStrategyArchitecture: ServiceData = {
   subtitle:
     "Design secure, scalable, and cost-efficient cloud architectures that accelerate digital transformation and business growth.",
 
-  heroImage: "/images/services/cloud-strategy-architecture.webp",
+ heroImage: "/images/servimg/cloud.png",
 
   stats: [
     {

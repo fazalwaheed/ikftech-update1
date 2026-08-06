@@ -10,7 +10,7 @@ export const websiteRedesign: ServiceData = {
   subtitle:
     "Transform outdated websites into modern, high-performing digital experiences that improve engagement, conversions, and brand perception.",
 
-  heroImage: "/images/services/website-redesign.webp",
+  heroImage: "/images/servimg/desing.png",
 
   stats: [
     {

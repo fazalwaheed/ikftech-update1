@@ -13,7 +13,7 @@ export const salesforce: ServiceData = {
   overview:
     "Our Salesforce experts help organizations implement, customize and optimize Salesforce for sales, marketing and customer service. We build scalable CRM ecosystems with automation, integrations, analytics and secure cloud architecture that improve operational efficiency and customer engagement.",
 
-  heroImage: "/images/services/salesforce.jpg",
+  heroImage: "/images/servimg/cloud.png",
 
   stats: [
     {

@@ -10,7 +10,7 @@ export const multiCloudSecurity: ServiceData = {
   subtitle:
     "Protect multi-cloud environments with enterprise-grade security, governance, compliance, and continuous threat monitoring.",
 
-  heroImage: "/images/services/multi-cloud-security.webp",
+  heroImage: "/images/servimg/cloud.png",
 
   stats: [
     {

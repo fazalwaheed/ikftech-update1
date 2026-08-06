@@ -10,7 +10,7 @@ export const aiPod: ServiceData = {
   subtitle:
     "Build production-ready AI systems in weeks with a dedicated AI engineering team.",
 
-  heroImage: "/images/services/ai-pod.webp",
+  heroImage: "/images/servimg/ai-agents.png",
 
   stats: [
     {

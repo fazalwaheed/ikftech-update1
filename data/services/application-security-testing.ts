@@ -10,7 +10,7 @@ export const applicationSecurityTesting: ServiceData = {
   subtitle:
     "Secure your applications with comprehensive penetration testing, vulnerability assessments, and secure software development practices.",
 
-  heroImage: "/images/services/application-security-testing.webp",
+  heroImage: "/images/servimg/full-stack-development.png",
 
   stats: [
     {

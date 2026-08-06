@@ -10,7 +10,8 @@ export const rebranding: ServiceData = {
   subtitle:
     "Refresh your brand identity with a modern strategy that aligns with your evolving business goals.",
 
-  heroImage: "/images/services/rebranding.webp",
+ 
+  heroImage: "/images/servimg/branding.png",
 
   overview:
     "Our rebranding service helps companies modernize their identity without losing the equity they have already built. We audit your current brand, clarify positioning, refresh visuals and messaging, and support a confident rollout across digital, print and internal channels.",

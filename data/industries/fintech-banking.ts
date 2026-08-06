@@ -13,7 +13,7 @@ export const fintechBanking: ServiceData = {
   overview:
     "IKFTECH develops enterprise-grade fintech solutions that help banks, financial institutions and startups deliver secure digital experiences. From payment gateways and digital wallets to lending platforms and regulatory compliance, we build scalable financial technology solutions that improve efficiency, security and customer engagement.",
 
-  heroImage: "/images/industries/fintech-banking.jpg",
+  heroImage: "/images/servimg/finetech.PNG",
 
   stats: [
     {

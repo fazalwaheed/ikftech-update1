@@ -10,7 +10,7 @@ export const brandIdentity: ServiceData = {
   subtitle:
     "Create a memorable, consistent brand identity that builds trust and differentiates your business.",
 
-  heroImage: "/images/services/brand-identity.webp",
+  heroImage: "/images/servimg/branding.png",
 
   overview:
     "Our brand identity service turns your business strategy into a clear visual and verbal system. From discovery and positioning to logo systems, colors, typography, messaging and usage guidelines, we create a consistent identity your team can use confidently across every customer touchpoint.",

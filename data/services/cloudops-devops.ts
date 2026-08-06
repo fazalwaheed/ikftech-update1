@@ -9,8 +9,7 @@ export const cloudOpsDevOps: ServiceData = {
 
   subtitle:
     "Accelerate software delivery with modern DevOps practices, cloud automation, CI/CD pipelines, and continuous infrastructure monitoring.",
-
-  heroImage: "/images/services/cloudops-devops.webp",
+heroImage: "/images/servimg/cloud.png",
 
   stats: [
     {

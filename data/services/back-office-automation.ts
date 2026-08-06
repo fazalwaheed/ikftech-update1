@@ -13,7 +13,7 @@ export const backOfficeAutomation: ServiceData = {
   overview:
     "IKFTECH helps organizations automate manual back-office processes including finance, procurement, HR operations, document processing, approvals, reporting, and workflow management. Using modern automation platforms and AI-powered technologies, we eliminate repetitive work so your teams can focus on strategic initiatives.",
 
-  heroImage: "/images/services/back-office-automation.jpg",
+  heroImage: "/images/servimg/full-stack-development.png",
 
   stats: [
     {

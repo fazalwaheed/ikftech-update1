@@ -10,7 +10,7 @@ export const cloudSecurity: ServiceData = {
   subtitle:
     "Protect cloud-native applications, workloads, and infrastructure with modern security architecture and continuous monitoring.",
 
-  heroImage: "/images/services/cloud-security.webp",
+  heroImage: "/images/servimg/cloud.png",
 
   stats: [
     {

@@ -10,7 +10,7 @@ export const aiStrategy: ServiceData = {
   subtitle:
     "Create an AI roadmap aligned with business objectives, technology investments and measurable outcomes.",
 
-  heroImage: "/images/services/ai-strategy.webp",
+  heroImage: "/images/servimg/ai-agents.png",
 
   stats: [
     {

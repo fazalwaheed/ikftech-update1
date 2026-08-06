@@ -13,7 +13,7 @@ export const financeOutsourcing: ServiceData = {
   overview:
     "IKFTECH helps businesses streamline finance operations with outsourced accounting, payroll, invoicing, and reporting services. We combine process automation, modern back-office platforms, and expert finance teams to improve compliance, reduce cycle time, and free internal resources for strategic work.",
 
-  heroImage: "/images/services/finance-outsourcing.jpg",
+  heroImage: "/images/servimg/bussiness.png",
 
   stats: [
     { value: "24/7", label: "Finance Support" },

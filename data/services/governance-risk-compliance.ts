@@ -10,7 +10,7 @@ export const governanceRiskCompliance: ServiceData = {
   subtitle:
     "Establish strong security governance, manage enterprise risk, and achieve regulatory compliance with confidence.",
 
-  heroImage: "/images/services/governance-risk-compliance.webp",
+  heroImage: "/images/servimg/security.png",
 
   stats: [
     {

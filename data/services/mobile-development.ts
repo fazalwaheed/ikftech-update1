@@ -6,7 +6,7 @@ export const mobileDevelopment: ServiceData = {
   title: "Mobile Development",
   subtitle:
     "Native and cross-platform mobile applications for Android and iOS.",
-  heroImage: "/images/services/mobile-development.webp",
+  heroImage: "/images/servimg/full-stack-development.png",
 
   stats: [
     { value: "150+", label: "Apps" },

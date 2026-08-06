@@ -10,7 +10,7 @@ export const muleSoft: ServiceData = {
   subtitle:
     "Connect applications, data, and systems through API-led integration using the MuleSoft Anypoint Platform.",
 
-  heroImage: "/images/services/mulesoft.webp",
+  heroImage: "/images/servimg/security.png",
 
   stats: [
     {

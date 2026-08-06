@@ -10,7 +10,7 @@ export const awsSolutions: ServiceData = {
   subtitle:
     "Build secure, scalable, and cloud-native applications on Amazon Web Services with certified AWS experts.",
 
-  heroImage: "/images/services/aws-solutions.webp",
+  heroImage: "/images/servimg/cloud.png",
 
   stats: [
     {

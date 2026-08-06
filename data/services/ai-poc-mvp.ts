@@ -10,7 +10,7 @@ export const aiPocMvp: ServiceData = {
   subtitle:
     "Validate AI ideas rapidly with production-ready Proof of Concepts and Minimum Viable Products.",
 
-  heroImage: "/images/services/ai-poc-mvp.webp",
+  heroImage: "/images/servimg/ai-poc-mvp.png",
 
   stats: [
     { value: "4 Weeks", label: "Average MVP" },

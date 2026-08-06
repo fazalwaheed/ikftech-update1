@@ -10,7 +10,7 @@ export const cloudMigration: ServiceData = {
   subtitle:
     "Seamlessly migrate applications, infrastructure, and data to the cloud with minimal downtime and maximum business continuity.",
 
-  heroImage: "/images/services/cloud-migration.webp",
+  heroImage: "/images/servimg/cloud.png",
 
   stats: [
     {

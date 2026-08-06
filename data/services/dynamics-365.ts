@@ -10,7 +10,7 @@ export const dynamics365: ServiceData = {
   subtitle:
     "Modernize business operations with Microsoft Dynamics 365 CRM, ERP, automation, and intelligent business applications.",
 
-  heroImage: "/images/services/dynamics-365.webp",
+  heroImage: "/images/servimg/full-stack-development.png",
 
   stats: [
     {

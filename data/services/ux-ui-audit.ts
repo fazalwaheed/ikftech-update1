@@ -10,7 +10,7 @@ export const uxUiAudit: ServiceData = {
   subtitle:
     "Identify usability issues, improve user journeys, and increase conversions through a comprehensive UX/UI evaluation.",
 
-  heroImage: "/images/services/ux-ui-audit.webp",
+  heroImage: "/images/servimg/branding.png",
 
   stats: [
     {

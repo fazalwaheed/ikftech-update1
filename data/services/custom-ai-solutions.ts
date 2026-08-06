@@ -6,7 +6,8 @@ export const customAiSolutions: ServiceData = {
   title: "Custom AI Solutions",
   subtitle:
     "Tailor-made AI systems built around your business processes and goals.",
-  heroImage: "/images/services/custom-ai-solutions.webp",
+ 
+  heroImage: "/images/servimg/ai-agents.png",
 
   stats: [
     { value: "80+", label: "AI Systems" },

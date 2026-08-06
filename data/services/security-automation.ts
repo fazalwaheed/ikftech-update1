@@ -10,7 +10,7 @@ export const securityAutomation: ServiceData = {
   subtitle:
     "Automate threat detection, incident response, vulnerability management, and compliance to strengthen your cybersecurity posture while reducing operational overhead.",
 
-  heroImage: "/images/services/security-automation.webp",
+  heroImage: "/images/servimg/cloud.png",
 
   stats: [
     {

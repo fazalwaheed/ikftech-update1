@@ -13,7 +13,7 @@ export const saasEnterprise: ServiceData = {
   overview:
     "IKFTECH designs and develops secure, high-performance SaaS platforms and enterprise software tailored to modern organizations. From CRM and ERP systems to workflow automation and multi-tenant cloud applications, we deliver scalable digital products that improve operational efficiency and customer experience.",
 
-  heroImage: "/images/industries/saas-enterprise.jpg",
+  heroImage: "/images/servimg/supply.PNG",
 
   stats: [
     {

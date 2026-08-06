@@ -6,7 +6,7 @@ export const mvpDevelopment: ServiceData = {
   title: "MVP Development",
   subtitle:
     "Launch your startup or product idea quickly with a scalable MVP built for validation and growth.",
-  heroImage: "/images/services/mvp-development.webp",
+  heroImage: "/images/servimg/ai-agents.png",
 
   stats: [
     { value: "4-8 Weeks", label: "Delivery" },

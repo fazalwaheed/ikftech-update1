@@ -10,7 +10,7 @@ export const cybersecurityConsulting: ServiceData = {
   subtitle:
     "Protect your business with proactive cybersecurity strategies, risk assessments, and enterprise-grade security consulting.",
 
-  heroImage: "/images/services/cybersecurity-consulting.webp",
+  heroImage: "/images/servimg/ai-agents.png",
 
   stats: [
     {

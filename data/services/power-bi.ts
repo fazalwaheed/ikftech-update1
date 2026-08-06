@@ -10,7 +10,7 @@ export const powerBI: ServiceData = {
   subtitle:
     "Turn business data into interactive dashboards, real-time reports, and actionable insights with Microsoft Power BI.",
 
-  heroImage: "/images/services/power-bi.webp",
+  heroImage: "/images/servimg/security.png",
 
   stats: [
     {

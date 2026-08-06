@@ -13,7 +13,7 @@ export const web3Blockchain: ServiceData = {
   overview:
     "IKFTECH helps startups and enterprises adopt blockchain technology through secure, scalable and enterprise-grade Web3 solutions. We build DeFi platforms, NFT marketplaces, crypto wallets, tokenization systems, DAO platforms and smart contract applications that deliver transparency, automation and trust.",
 
-  heroImage: "/images/industries/web3-blockchain.jpg",
+  heroImage: "/images/servimg/web3.PNG",
 
   stats: [
     {

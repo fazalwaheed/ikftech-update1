@@ -10,7 +10,7 @@ export const machineLearning: ServiceData = {
   subtitle:
     "Build predictive machine learning systems that transform business data into intelligent decisions.",
 
-  heroImage: "/images/services/machine-learning.webp",
+  heroImage: "/images/servimg/machine-learning.png",
 
   stats: [
     { value: "150+", label: "ML Models" },

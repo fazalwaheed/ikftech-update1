@@ -6,7 +6,7 @@ export const applicationDevelopment: ServiceData = {
   title: "Application Development",
   subtitle:
     "Enterprise-grade web applications that streamline operations and improve customer experience.",
-  heroImage: "/images/services/application-development.webp",
+  heroImage: "/images/servimg/full-stack-development.png",
 
   stats: [
     { value: "250+", label: "Applications" },

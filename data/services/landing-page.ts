@@ -6,7 +6,8 @@ export const landingPage: ServiceData = {
   title: "Landing Page Development",
   subtitle:
     "High-converting landing pages built for marketing campaigns and lead generation.",
-  heroImage: "/images/services/landing-page.webp",
+  
+  heroImage: "/images/servimg/full-stack-development.png",
 
   stats: [
     { value: "300+", label: "Pages" },
