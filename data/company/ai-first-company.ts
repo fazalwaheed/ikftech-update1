@@ -1,68 +1,80 @@
-import { ServiceData } from "@/components/services/types";
+import { CompanyData } from "@/components/company/types";
 
-export const aiFirstCompany: ServiceData = {
-  slug: "ai-first-company",
+export const aiFirstCompany: CompanyData = {
+  slug: "ai-first",
 
-  category: "Company",
-
-  title: "AI-First at IKFTECH",
+  title: "AI-First Company",
 
   subtitle:
-    "We build AI-first products and systems that put intelligent automation at the heart of software.",
+    "We use artificial intelligence to rethink how products are designed, engineered, automated, and scaled.",
 
   overview:
-    "IKFTECH focuses on building AI-native applications, integrating ML pipelines into products, and enabling businesses to leverage data for smarter decisions.",
+    "Being AI-first means more than adding an AI feature to an existing product. At IKFTECH, we evaluate where intelligence can create genuine leverage across the entire product lifecycle—from discovery and architecture to automation, customer experiences, analytics, and operations.",
 
-  heroImage: "/images/company/ai-first.jpg",
+  heroImage: "/images/company/ai-first.png",
 
   stats: [
     {
-      value: "100+",
-      label: "AI Projects",
+      value: "AI",
+      label: "First Mindset",
+    },
+    {
+      value: "24/7",
+      label: "Automation",
     },
     {
       value: "50+",
-      label: "ML Deployments",
+      label: "AI Capabilities",
     },
     {
-      value: "30+",
-      label: "Data Scientists",
+      value: "100%",
+      label: "Product Focus",
     },
   ],
 
   features: [
     {
-      title: "MLOps",
-      description: "Production-ready ML pipelines, monitoring, and governance.",
+      title: "AI-Native Products",
+      description:
+        "We design products where intelligent capabilities are part of the core experience rather than an isolated feature.",
     },
     {
-      title: "Custom Models",
-      description: "Tailored models for domain-specific intelligence.",
+      title: "Intelligent Automation",
+      description:
+        "We identify repetitive workflows and use AI-powered automation to reduce manual effort and operational overhead.",
     },
     {
-      title: "AI Integration",
-      description: "Embedding AI capabilities into existing products and workflows.",
+      title: "AI-Powered Experiences",
+      description:
+        "From conversational interfaces to personalized workflows, we create experiences that adapt to users and context.",
     },
-  ],
-
-  process: ["Discover", "Data", "Train", "Integrate", "Deploy", "Monitor"],
-
-  techStack: ["PyTorch", "TensorFlow", "LangChain", "OpenAI", "Kubernetes", "AWS"],
-
-  caseStudies: [
     {
-      title: "Conversational Agent for Support",
-      description: "Reduced support costs by 40% with an AI assistant.",
-      href: "/work",
+      title: "Responsible AI Engineering",
+      description:
+        "Security, reliability, privacy, evaluation, and human oversight are considered throughout the AI product lifecycle.",
     },
   ],
 
-  faqs: [
+  timeline: [
     {
-      question: "How do you start an AI project?",
-      answer: "We begin with data discovery, prototyping, then iterate to production.",
+      title: "Discover",
+      description:
+        "We identify where AI can solve a real business problem and where conventional engineering remains the better choice.",
+    },
+    {
+      title: "Design",
+      description:
+        "We define the intelligence layer, user experience, data requirements, and interaction model.",
+    },
+    {
+      title: "Build",
+      description:
+        "Engineering teams integrate models, agents, data pipelines, APIs, and product interfaces into a production-ready system.",
+    },
+    {
+      title: "Scale",
+      description:
+        "We continuously evaluate performance, cost, reliability, and user outcomes as the product grows.",
     },
   ],
 };
-
-export default aiFirstCompany;
